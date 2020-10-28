@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: "Josefin Sans",sans-serif;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  width:100%;
+  line-height:100px;
+  background-color:#fff740;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0,0,0,0.5);
+ }
+img{
+  margin:15px;
+  border-radius: 6px;
 }
+h1{
+  /* text-shadow: 2px 3px 3px whitesmoke; */
+  color:#38A1C5;
+  font-family: "Roboto";
+  /* font-weight: 600;
+ font-size:27px; */
 
-.App-link {
-  color: #61dafb;
 }
+.main_notediv{
+  width:500px;
+  padding: 15px 10px 5px 10px;
+  /* min-height:200px; */
+  margin:20px auto;
+ border-radius: 5px;
+}
+/* .main_notediv h1{
+  color:#34495e;
+}
+.main_notediv p {
+  color:grey;
+} */
+form{ 
+  box-shadow: 3px 5px 15px -5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  min-height: 50px;
+ padding: 15px 10px 5px 10px;
+ background-color:#fff740;
+  /* display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+position: relative;
+}
+input{
+  color:#34495e;
+border:none;
+outline:none;
+background-color: #fff740;
+font-family: "Roboto";
+line-height: 30px;
+width:100%;
+padding:12px;
+font-size:1.5rem;
+margin:10px 0;
+font-weight: inherit;
+text-transform: capitalize;
+/* margin-top: 3px;
+margin-bottom:5px; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+textarea{
+  color:#3f000f;
+  border:none;
+  outline:none;
+line-height: 30px;
+  font-family: "Roboto";
+  padding:5px;
+  font-weight: 500;
+  margin:10px 0;
+  font-size: 22px;
+  /* margin-bottom:3px; */
+  width:100%;
+background-color: #fff740;
+
+}
+.MuiButton-root {
+  border-radius: 50%;
+  background-color:#38a1c5;
+  position:absolute;
+  bottom: -28px;
+  left:400px;
+  cursor:pointer;
+  width:30px;
+height: 50px;
+border:none;
+outline:none;
+/* box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.5); */
+}
+/* .MuiButton-root .plus_sign */
+.MuiButton-root .plus_sign{
+z-index: 222;
+  cursor: pointer;
+  display: flex;
+background-color:#38a1c5;
+border-radius: 50%;
+color:white;
+  font-size: 45px;
+  font-weight: 900;
+}
+.MuiButton-root:hover {
+  background:#FF65A3;
+}
+.MuiButton-root:hover .plus_sign{
+  background-color:#FF65A3;
+  color:#52f769;
+ 
+}
+.note{
+background-color:#38A1C5;
+border-radius: 7px;
+box-shadow: 0 2px 5px #ccc;
+padding:10px;
+width:240px;
+margin:16px;
+float:left;
+}
+.note h1{
+  color:white;
+  font-size: 1.1em;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+ 
+
+}
+.note p{
+  margin-bottom:8px;
+  color:black;
+  font-size:1.1em;
+  white-space: pre-wrap;
+  word-wrap:break-word;
+
+}
+.note .btn{
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  background-color: #FF65A3;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  box-shadow: 3px 3px 15px -10px rgba(0,0,0,0.5);
+  border-radius:50%;
+
+}
+.deleteIcon{
+  width: 1.7em;
+  height:0.7em;
+}
+.note .btn:hover{
+  background-color:#52f769;
+}
+.note .btn:hover .deleteIcon{
+  color:crimson;
+}
+footer {
+  width:100%;
+  position: absolute;
+   bottom:0;
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 10px;
+  color:#34495e; 
 }
